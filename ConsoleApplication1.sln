@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "占位符的使用", "Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "变量交换", "ConsoleApplication3\变量交换.csproj", "{9530A364-7CBF-4733-8A4B-387C81DC9F78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "输入交互", "输入交互\输入交互.csproj", "{7388A758-7B95-45D6-868C-31B0ED4744A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9530A364-7CBF-4733-8A4B-387C81DC9F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9530A364-7CBF-4733-8A4B-387C81DC9F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9530A364-7CBF-4733-8A4B-387C81DC9F78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7388A758-7B95-45D6-868C-31B0ED4744A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7388A758-7B95-45D6-868C-31B0ED4744A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7388A758-7B95-45D6-868C-31B0ED4744A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7388A758-7B95-45D6-868C-31B0ED4744A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
