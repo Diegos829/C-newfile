@@ -21,8 +21,9 @@ namespace @bool
             int Chn = Convert.ToInt32(Console.ReadLine());
             Console.Write("输入英语成绩：");
             int Eng = Convert.ToInt32(Console.ReadLine());
-            bool result = Chn >= 90 || Eng >= 90;
-            Console.WriteLine(result);
+            bool result = Chn >= 90 && Eng >= 90;
+            bool result2 = Chn >= 90 || Eng >= 90;
+            Console.WriteLine("\"我的成绩都超过了90分\"，是真的吗？{0}，\"其中有一门成绩超过了90分是真的吗？\"{1}",result,result2);
             
             Console.ReadKey();
         }
