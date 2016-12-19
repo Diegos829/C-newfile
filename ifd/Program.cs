@@ -86,26 +86,159 @@ namespace ifd
             //if (Uage < 30)
             //    Console.WriteLine("青春多美好，珍惜当下！");
 
-            Console.Write("把工资输进来，我们看看你是什么人：");
-            string Pay = Console.ReadLine();
-            int Upay = Convert.ToInt32(Pay);
-            if (Upay >= 20000)
+            //Console.Write("把工资输进来，我们看看你是什么人：");
+            //string Pay = Console.ReadLine();
+            //int Upay = Convert.ToInt32(Pay);
+            //if (Upay >= 20000)
+            //{
+            //    Console.WriteLine("您跟我们玩什么啊，一边玩蛋去吧");
+            //}
+            //else if (Upay >= 10000)
+            //{
+            //    Console.WriteLine("过的不错啊！");
+            //}
+            //else if (Upay >= 5000)
+            //{
+            //    Console.WriteLine("恩，工薪阶层！");
+            //}
+            //else 
+            //{ 
+            //    Console.WriteLine("快醒醒，工头喊你搬砖了！\n好嗨森，今天又可以搬砖咯~~~");
+            //}
+            //Console.ReadKey(); 
+
+            //1
+            //Console.WriteLine("来吧，直接给个密码就可以让你取钱！");
+            //string Password = Console.ReadLine();
+            //if (Password == "888888")
+            //{
+            //    Console.WriteLine("哎呀，对勒嘿，来，拿走~");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("再来一次吧，直接给个密码就可以让你取钱！");
+            //    Password = Console.ReadLine();
+            //    if (Password == "888888")
+            //    {
+            //        Console.WriteLine("拿走拿走");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("没救了……");
+            //    }
+            //}
+            //Console.ReadKey();
+
+            //2
+            //Console.WriteLine("您的账户名是：");
+            //string UserName = Console.ReadLine();
+            //Console.WriteLine("密码来一套：");
+            //string Password = Console.ReadLine();
+
+            //if (UserName == "Admin" && Password == "888888")
+            //{
+            //    Console.WriteLine("哎呀，对勒嘿，来，拿走~");
+            //}
+            //else if (UserName != "Admin")
+            //{
+            //    Console.WriteLine("用户名不对哟，想一哈想一哈~");
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("密码不对哦，想清楚再来哈，88~");
+            //}
+
+            //Console.ReadKey();
+
+            //3
+            //Console.WriteLine("input your age:");
+            ////string Age = Console.ReadLine();
+            ////int Uage = Convert.ToInt32(Age);
+            //int Uage = Convert.ToInt32(Console.ReadLine());
+            //if (Uage >= 18)
+            //{
+            //    Console.WriteLine("you can look FBI WARNING!");
+            //}
+            //else if (Uage >= 10)
+            //{
+            //    Console.WriteLine("do you wont look FBI WARNING?");
+            //    string Yes = Console.ReadLine();
+            //    if (Yes == "yes")
+            //    {
+            //        Console.WriteLine("look个蛋，毛都没长齐！");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("乖，听话，回家睡觉。");
+            //    }
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("you need TianXianBaoBao~");
+            //}
+            //    Console.ReadKey();
+
+            //4
+            //Console.WriteLine("你等级是(A到E)：");
+            //string Class = Console.ReadLine();
+            //decimal salary = 5000;
+            //bool flag = false;
+            //if (Class == "A")
+            //{
+            //    salary += 500;
+            //}
+            //else if (Class == "B")
+            //{
+            //    salary += 250;
+            //}
+            //else if (Class == "C")
+            //{
+            //}
+            //else if (Class == "D")
+            //{
+            //    salary -= 250;
+            //}
+            //else if (Class == "E")
+            //{
+            //    salary -= 500;
+            //}
+            //else
+            //{
+            //    Console.WriteLine("没按提示输入");
+            //    flag = true;
+            //}
+            //if (flag==false)
+            //{ 
+            //Console.WriteLine("……"+salary);
+            //}
+            //Console.ReadKey();
+
+            //4-2
+            Console.WriteLine("你等级是(A到E)：");
+            string Class = Console.ReadLine();
+            decimal salary = 5000;
+            bool flag = false;
+            switch (Class)
             {
-                Console.WriteLine("您跟我们玩什么啊，一边玩蛋去吧");
+                case "A":salary += 500;
+                    break;
+                case"B":salary += 200;
+                    break;
+                case"C":
+                    break;
+                case "D": salary -= 200;
+                    break;
+                case "E":salary -= 500;
+                    break;
+                default:Console.WriteLine("必须是大写的A到E");
+                    flag = true;
+                    break;                
             }
-            else if (Upay >= 10000)
+            if (flag == false)
             {
-                Console.WriteLine("过的不错啊！");
+                Console.WriteLine("……" + salary);
             }
-            else if (Upay >= 5000)
-            {
-                Console.WriteLine("恩，工薪阶层！");
-            }
-            else 
-            { 
-                Console.WriteLine("快醒醒，工头喊你搬砖了！\n好嗨森，今天又可以搬砖咯~~~");
-            }
-            Console.ReadKey(); 
+            Console.ReadKey();
         }
     }
 }
