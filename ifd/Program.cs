@@ -28,13 +28,24 @@ namespace ifd
             //}
 
 
-            Console.Write("输入用户名：");
-            string UserName = Console.ReadLine();
-            Console.Write("输入密码：");
-            string PassWord = Console.ReadLine();
-            if (UserName == "admin" && PassWord == "password")
+            //Console.Write("输入用户名：");
+            //string UserName = Console.ReadLine();
+            //Console.Write("输入密码：");
+            //string PassWord = Console.ReadLine();
+            //if (UserName == "admin" && PassWord == "password")
+            //{
+            //    Console.WriteLine("输入正确，什么也不用打开");
+            //}
+            Console.WriteLine("来把你的工资填写进来看一下：");
+            string pay = Console.ReadLine();
+            int mypay = Convert.ToInt32(pay);
+            if (mypay > 5000)
             {
-                Console.WriteLine("输入正确，什么也不用打开");
+                Console.WriteLine("恭喜你进入了穷人阶级！");////if只带这句
+            }
+            else
+            {
+                Console.WriteLine("哎，你还在生死线上徘徊，还要加油啊！");
             }
             Console.ReadKey(); 
         }
