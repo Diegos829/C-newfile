@@ -214,29 +214,103 @@ namespace ifd
             //Console.ReadKey();
 
             //4-2
-            Console.WriteLine("你等级是(A到E)：");
-            string Class = Console.ReadLine();
-            decimal salary = 5000;
-            bool flag = false;
-            switch (Class)
+            //Console.WriteLine("你等级是(A到E)：");
+            //string Class = Console.ReadLine();
+            //decimal salary = 5000;
+            //bool flag = false;
+            //switch (Class)
+            //{
+            //    case "A":salary += 500;
+            //        break;
+            //    case"B":salary += 200;
+            //        break;
+            //    case"C":
+            //        break;
+            //    case "D": salary -= 200;
+            //        break;
+            //    case "E":salary -= 500;
+            //        break;
+            //    default:Console.WriteLine("必须是大写的A到E");
+            //        flag = true;
+            //        break;          
+            //}
+            //if (flag == false)
+            //{
+            //    Console.WriteLine("……" + salary);
+            //}
+            //Console.ReadKey();
+
+            //5
+            //Console.Write("input year:");
+            //int year = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("input month:");
+            //int month = Convert.ToInt32(Console.ReadLine());
+            //switch (month)
+            //{
+            //    case 1:
+            //    case 3:
+            //    case 5:
+            //    case 7:
+            //    case 8:
+            //    case 10:
+            //    case 12:
+            //        Console.Write("leap year has 31 days");
+            //        break;
+            //    case 2:
+            //        if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
+            //        {
+            //            Console.WriteLine("29");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("28");
+            //        }
+            //        break;
+            //    default:
+            //        Console.WriteLine("Non leap year 30 days");
+            //        break;
+            //        }
+
+
+            Console.Write("input your score:");
+            int number = Convert.ToInt32(Console.ReadLine());
+            //if (number >= 90)
+            //{
+            //    Console.Write("you got A,nice job!");
+            //}
+            //else if (number < 90 && number >= 80)
+            //{
+            //    Console.Write("you got B,wow!");
+            //}
+            //else if (number < 80 && number >= 70)
+            //{
+            //    Console.Write("you got C,oh...");
+            //}
+            //else if (number < 70 && number >= 60)
+            //{
+            //    Console.Write("you got D,hmmm...");
+            //}
+            //else 
+            //    { Console.Write("you got E,bad!");      
+
+            //}
+            switch (number / 10)
             {
-                case "A":salary += 500;
+                case 9:
+                    Console.Write("you got A,nice job!");
                     break;
-                case"B":salary += 200;
+                case 8:
+                    Console.Write("you got B,wow!");
                     break;
-                case"C":
+                case 7:
+                    Console.Write("you got C,aha~");
                     break;
-                case "D": salary -= 200;
+                case 6:
+                    Console.Write("you got D,hmmm...");
                     break;
-                case "E":salary -= 500;
+                default:
+                    Console.Write("you got E,oh my god...");
                     break;
-                default:Console.WriteLine("必须是大写的A到E");
-                    flag = true;
-                    break;                
-            }
-            if (flag == false)
-            {
-                Console.WriteLine("……" + salary);
             }
             Console.ReadKey();
         }
