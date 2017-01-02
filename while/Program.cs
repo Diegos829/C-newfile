@@ -48,16 +48,31 @@ namespace @while
             //Console.ReadKey();
 
             //test 4
-            Console.WriteLine("Do u understand?(input y/n)");
-            string answer = Console.ReadLine();
-            int i = 0;
-            while (answer == "n"&&i<4)
-            {
-                Console.WriteLine("Do u understand?(input y/n)");
-                i++;
-                answer = Console.ReadLine();
+            //Console.WriteLine("Do u understand?(input y/n)");
+            //string answer = Console.ReadLine();
+            //int i = 0;
+            //while (answer == "n"&&i<4)
+            //{
+            //    Console.WriteLine("Do u understand?(input y/n)");
+            //    i++;
+            //    answer = Console.ReadLine();
+            //}
+            //Console.WriteLine("okay while out");
+            //Console.ReadKey();
+
+            //test 5
+            Console.WriteLine("今年￥8000,每年增加25%，哪年能达到￥200000？");
+            int year = 2017;
+            double money = 80000;
+            
+            while(money<=200000)
+            { 
+            money=money*1.25;
+                year++;
+                
             }
-            Console.WriteLine("okay while out");
+            Console.WriteLine(year);
+          
             Console.ReadKey();
         }
     }
