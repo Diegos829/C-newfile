@@ -294,7 +294,7 @@ namespace ifd
             //    { Console.Write("you got E,bad!");      
 
             //}
-            switch (number / 10)
+            switch (number / 10)//写出来以后才发现switch处理这种状况是有bug的，在超出范围取值是有问题的，不能报错。。。
             {
                 case 9:
                     Console.Write("you got A,nice job!");
